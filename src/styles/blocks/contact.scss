@@ -1,0 +1,70 @@
+.contact {
+  display: grid;
+  margin: auto;
+  @include contentPaddingInline;
+  @include pageGrid;
+
+  &__other {
+    grid-column: 1 / -1;
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__text,
+  &__email {
+    border-radius: 40px;
+    height: 48px;
+  }
+
+  &__text,
+  &__email,
+  &__message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(248, 248, 250, 1);
+    border: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__message {
+    border-radius: 16px;
+    height: 148px;
+  }
+
+  &__button {
+    padding: 10px;
+    background-color: rgba(248, 248, 250, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 32px;
+    height: 56px;
+    margin-bottom: 48px;
+
+    &:hover {
+      background-color: rgba(248, 248, 250, 1);
+    }
+  }
+
+  &__send {
+    text-decoration: none;
+    color: rgba(29, 29, 29, 1);
+  }
+}
+
+.contacts {
+}
