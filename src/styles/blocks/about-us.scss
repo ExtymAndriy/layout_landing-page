@@ -1,36 +1,42 @@
 .about-us {
+  margin: 0 120px;
+
   --columns: 2;
+
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
+
     column-gap: 24px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns: 12;
   }
 
   &__title {
     grid-column: 1 / -1;
-    @include onTablet {
+
+    @include on-tablet {
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 5;
     }
   }
 
   &__content {
     grid-column: 1 / -1;
-    @include onTablet {
+
+    @include on-tablet {
       grid-column: 4 / 7;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 5;
     }
   }

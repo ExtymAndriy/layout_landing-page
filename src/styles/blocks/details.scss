@@ -2,7 +2,8 @@
   &__wrapper {
     display: grid;
     row-gap: 40px;
-    @include onTablet {
+
+    @include on-tablet {
       row-gap: 64px;
     }
   }
@@ -10,30 +11,31 @@
 
 .detail {
   &__photos {
-    @include pageGrid;
+    @include page-grid;
+
     margin-bottom: 16px;
   }
 
   &__link {
     position: relative;
     &--square {
-      @include onTablet {
+      @include on-tablet {
         height: 0;
         padding-bottom: 100%;
         grid-column: span 2;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }
 
     &--wide {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 4;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 8;
       }
     }
@@ -59,11 +61,11 @@
     font-size: 16px;
     line-height: 140%;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 2;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }

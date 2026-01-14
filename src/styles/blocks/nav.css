@@ -6,6 +6,7 @@
   line-height: 22px;
   letter-spacing: 2px;
 }
+
 .nav__link::after {
   content: '';
   display: block;
@@ -17,9 +18,11 @@
   transition: transform 0.3s;
   transform: scale(0);
 }
+
 .nav__link:hover::after {
   transform: scale(1);
 }
+
 .nav__list {
   margin: 0 141px;
   padding: 0;
@@ -27,4 +30,4 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-} /*# sourceMappingURL=nav.css.map */
+}
