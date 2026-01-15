@@ -56,7 +56,6 @@
 }
 
 .page__body {
-
   margin: 0;
   min-width: 320px;
 }
@@ -83,6 +82,7 @@
 }
 
 .header {
+  height: 100vh;
   background-image: url('../images/phone-bg.png');
   background-size: cover;
   background-position: center;
@@ -276,25 +276,25 @@
   cursor: pointer;
 }
 
-.phone-container:hover .phone-number {
-  opacity: 1;
-  left: -230px;
-}
-
 .phone-number {
   letter-spacing: 2px;
   font-weight: 700;
   text-decoration: none;
   position: absolute;
   left: -230px;
-  top: 50%; transform:
-  translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   color: rgba(255, 255, 255, 1);
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
   opacity: 0;
   transition: all 0.3s ease;
+}
+
+.phone-container:hover .phone-number {
+  opacity: 1;
+  left: -230px;
 }
 
 .icon--phone {
@@ -721,8 +721,6 @@
   border-radius: 16px;
   height: 148px;
 }
-
-
 
 .contact__button {
   padding: 10px;
