@@ -61,10 +61,18 @@
               />
             </a>
             <div class="top-bar__icons">
-              <a
-                href="tel:+1 234 5555-55-55"
-                class="icon icon--phone"
-              ></a>
+              <div class="phone-container">
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="icon icon--phone"
+                ></a>
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="phone-number"
+                >
+                  +1 234 555-55-55
+                </a>
+              </div>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -379,7 +387,10 @@
             <div class="contacts__all">
               <div class="contact">
                 <div class="contact__other">
-                  <form class="contact__form" onsubmit="this.reset(); return false;">
+                  <form
+                    class="contact__form"
+                    onsubmit="this.reset(); return false;"
+                  >
                     <input
                       class="contact__text"
                       type="text"
