@@ -90,6 +90,12 @@
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .header {
+    background-position: 73% center;
+  }
+}
+
 .header__content {
   display: flex;
   flex-direction: column;
@@ -139,7 +145,6 @@
 }
 
 .top-bar {
-  margin: 0 120px;
   padding: 24px;
   display: flex;
   justify-content: space-between;
@@ -149,6 +154,7 @@
 @media (min-width: 576px) {
   .top-bar {
     padding-block: 64px;
+    margin: 0 120px;
   }
 }
 
@@ -178,6 +184,13 @@
 @media (min-width: 576px) {
   .top-bar__logo {
     height: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-bar__logo {
+    margin-right: 78px;
+    margin-left: 0;
   }
 }
 
@@ -256,11 +269,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: transform 0.3s;
-}
-
-.icon:hover {
-  transform: scale(1.2);
 }
 
 @media (min-width: 576px) {
@@ -292,21 +300,30 @@
   transition: all 0.3s ease;
 }
 
-.phone-container:hover .phone-number {
-  opacity: 1;
-  left: -230px;
+@media (min-width: 1024px) {
+  .phone-container:hover .phone-number {
+    opacity: 1;
+    left: -230px;
+  }
 }
 
 .icon--phone {
   background-image: url('../images/new-phone-call-2x.png');
+  transition: transform 0.3s;
+}
+
+.icon--phone:hover {
+  transform: scale(1.2);
 }
 
 .icon--menu {
   background-image: url('../images/Icon-Burger-menu-2x.png');
+  transition: transform 0.3s;
 }
 
 .icon--menu:hover {
   background-image: url('../images/Vector.png');
+  transform: scale(1.1);
 }
 
 .icon--close {
@@ -696,6 +713,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+input,
+textarea:focus {
+  outline: none;
+  border: none;
 }
 
 input:is(:-webkit-autofill, :autofill) {
