@@ -1,0 +1,521 @@
+<!-- #region head -->
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Landing Page</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/logo-C9GA-fGJ.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/black-logo-C1t8sGe5.png"
+    />
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-B2iNOfNp.css">
+  </head>
+  <!-- #endregion -->
+  <body class="page__body">
+    <!-- #region header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a
+              href="#"
+              class="top-bar__logo"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAAmCAYAAAAIjkMFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUtSURBVHgB7ZuLUeQwDIZ/bq4ASshVcFABoQKggjMVHFRAqIClAkIFQAWECo4ONh1ABz5r4+VhLNlOnDCw+WYyQKz4EcuSLAdgpjda68JcC3M96Y5/5lKY2SzMpC+1nxPMbAZmsg81zxO+GD9Npyuh/HFra+sWiZDJND+UIHJr6n3EyJh+7Jgfh0jj2VwturG3glwhlG3jfT9O3HuWxrTRQCAwPy/vUWgjDi3TS7PJTwbqVZiAiH6EYH2+uV9KzzmyLSNXBfp/kaGNKH5AZtvIlEjnDN8DsihX5h3Q9W612ZV87nmGLMoRBqK7Fc7FGm2ONt7yM0KGJrVBJFZxCnwvlP15/PamUYbKjLcxv5boxkxmujb3nzEA3bm0C6aY6t4PuK1kYhSBTOBOgk9X+J6Qm7l2fbr9u0EmdBdf3Qgip7mVgIhRBIICrqAi2EH8QQTW1HKB3HNMkGrqoOe5AEl6nlbVqXOP6qGVKPWf2msi2n8cEAyTEhRM2bmpt0YatbkeglKRscST6yOZui4i61NWfinI7ES098Q8u7TlSipn6tzRPLeObFQQmCB3pnluAu+Ca0MhglCwuIaUQEXIpW7VrvvWZQfIKec5emJXMrea+2/PAuguOKyY4hZOfJKbWEUgDqRCOzEF0ligM9M+/kKGM+FtD/PpwvVplNyH7lwqt9Nq0QWHgwLQECmKQEFjKZRHxQZvsYO7ZIrZrat9cSXzHFdfFIG6g3FLz/buwVubozGCQ5fYYHGNdyspvDya6JA5rcGvBm7rqsATM1nbjO+UgsXLUBawJ7RNLJiy0wwZ2AM7PxwUmC+kYPGKuf9hYs292iPXxAYw5u97zeNrb8nIXjlyQzOLa2rfG9TDg8Ul36ScdUzoS4hV4Cy5Btpy+PzSidOBAv74oUY8UnDntldC2F4hLy06/6wwDgVz/4GSVZiQUIzg87duEFfio/lPCtgCSZk952/FyD2M4EsLdClmhWn5rWVznp2QIiw898i/vt3a+fx7g3S4reRLkKrlhFWFcSjQKcMY5yctc58W1r2OyN3kQlQEG9U3nqKVVRDMdB8TTUEet0VaK17JlLeJgVxrrl+eaxf8rqPS+T84IeVvmLICcqo5Fsqg/hKu/ZWUEEQoW859gEEr1RskrnugE7Nd5n7FyK8ym5oPKrn6kjOLoX44coMzi3ZcS81zgQj0BJnFBv6VSlbBZ6Zr9IdLMJGJrOC3CDkSSC41c58mLZj6TsFaXTpS5qzhiZ7g07egItiO+vy3LwVMsr2TLratO6aYyzRmT/JAzn0UyIzNFZwKIme5FdAlNrMY+7JvM6RCa6QxKJPIIKXTR0n1WqvGZlnNdaNH3ElEZRYpENOvH2BIXGMgCW0Rdc8tI5dZpBd+EGi7xUiYsZAb+M20X6BThtRzhz3zTFAoJcVMJrsUylMjd4lzxClC3wQSTfgV0hkjV+FCp4x09lB4ytZfLqWcRCpEnBynHDrVkM1itqyeVaiQ1k8xKS4KI2PHJH2PSDuh7DmNaEUQgsY1DfIS8v01poPGfjyV4kUEj7TtLJGRFItAcEHj3QgvidtKEmNsGTnozGV3wvZWrE4E5cWQNXikGIEz6R+OP20gR5rqbq84BVmA+aYPYbYx/AukR/RzWaSALbp/QJFcFDe+pqecSwXZRZZ4tYxcG18b7c9aapuF+34DnvmI7v7LmKNPtD/zFRGsgdYTH8/OfBLWGixna7DhaPnzshIzm4FgDRrMbAYBa6AwsxkI1mCJmc1gtgafy3+Qo/fG9k5I8gAAAABJRU5ErkJggg=="
+                alt="Bike"
+              />
+            </a>
+            <div class="top-bar__icons">
+              <div class="phone-container">
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="icon icon--phone"
+                ></a>
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="phone-number"
+                >
+                  +1 234 555-55-55
+                </a>
+              </div>
+              <a
+                href="#menu"
+                class="icon icon--menu"
+              ></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title">Take the Streets</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- #endregion -->
+    <!-- #region aside -->
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a
+            href="#"
+            class="top-bar__logo-link"
+          >
+            <img
+              src="data:image/png;base64,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"
+              alt="Bike"
+              class="top-bar__logo"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="icon icon--close"
+          ></a>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about-us"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#compare-bikes"
+                >
+                  Compare Bikes
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#details"
+                >
+                  details
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#contacts"
+                >
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__phone-number"
+          >
+            +1 234 5555-55-55
+          </a>
+
+          <a
+            href="tel:+1 234 5555-55-55"
+            class="menu__book-a-test-drive"
+          >
+            Book a test ride
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- #endregion -->
+    <!-- #region main -->
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <!-- #region section-1 -->
+          <section
+            class="about-us"
+            id="about-us"
+          >
+            <h2
+              class="about-us__title section-title section-title--align--left"
+            >
+              Move Free
+            </h2>
+            <div class="about-us__content">
+              <p class="about-us__description">
+                Shift your ride, not gears. Find the fastest way to move in the
+                city as the bike adapts intuitively to power the speed you need.
+              </p>
+            </div>
+          </section>
+          <!-- #endregion -->
+
+          <!-- #region section-2 -->
+          <section
+            class="compare-bikes"
+            id="compare-bikes"
+          >
+            <h2 class="section-title">Compare bikes</h2>
+            <div class="compare-bikes__products">
+              <article class="product compare-bikes__product">
+                <a href="#">
+                  <img
+                    src="/layout_landing-page/assets/bike-1-D6a5_Vwo.png"
+                    alt="bike_1"
+                    class="product__photo"
+                  />
+                </a>
+                <h3 class="product__title">Sporty 4</h3>
+                <p class="product__category">
+                  The iconic frame brought to a new performance height as a
+                  sporty, active ride.
+                </p>
+                <p class="product__price">$ 2 590</p>
+              </article>
+              <article class="product compare-bikes__product">
+                <a href="#">
+                  <img
+                    src="/layout_landing-page/assets/bike-2-h7S9gerF.png"
+                    alt="bike_1"
+                    class="product__photo"
+                  />
+                </a>
+                <h3 class="product__title">Ride in town ST</h3>
+                <p class="product__category">
+                  An open frame for an upright riding position as the most
+                  comfortable ride in town.
+                </p>
+                <p class="product__price">$ 2 590</p>
+              </article>
+              <article class="product compare-bikes__product">
+                <a href="#">
+                  <img
+                    src="/layout_landing-page/assets/bike-3-Dvybcdq2.png"
+                    alt="bike_1"
+                    class="product__photo"
+                  />
+                </a>
+                <h3 class="product__title">Agile ride 3</h3>
+                <p class="product__category">
+                  The lightweight frame that has earned its street tread as a
+                  sleek, agile ride.
+                </p>
+                <p class="product__price">$ 2 090</p>
+              </article>
+            </div>
+          </section>
+          <!-- #endregion -->
+
+          <!-- #region section-3 -->
+          <section
+            class="details"
+            id="details"
+          >
+            <h2 class="section-title">The details</h2>
+
+            <div class="details__wrapper">
+              <!-- #region detail-1 -->
+              <article class="detail">
+                <div class="detail__photos">
+                  <a
+                    href="#"
+                    class="detail__link detail__link--wide"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/Image-DeHKk-lB.png"
+                      alt="Auto Unlock"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="detail__link detail__link--square"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/image%208-Bz3L958I.png"
+                      alt="Auto Unlock"
+                    />
+                  </a>
+                </div>
+                <h3 class="detail__title">Auto Unlock</h3>
+                <p class="detail__paragraph">
+                  The app senses when you're nearby to unlock automatically. GPS
+                  tracking so you know where your bike is and can track it
+                  anytime.
+                </p>
+              </article>
+              <!-- #endregion -->
+              <!-- #region detail-2 -->
+              <article class="detail">
+                <div class="detail__photos">
+                  <a
+                    href="#"
+                    class="detail__link detail__link--wide"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/image%209-NUih4HtT.png"
+                      alt="Range & Integrated lights"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="detail__link detail__link--square"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/image%207-CSUCX-oW.png"
+                      alt="Range & Integrated lights"
+                    />
+                  </a>
+                </div>
+                <h3 class="detail__title">Range & Integrated lights</h3>
+                <p class="detail__paragraph">
+                  The removable battery has up to 70km battery autonomy and
+                  weighs only 2.4 kg.
+                  <br />
+                  Lights integrated into the frame give you always-on visibility
+                  day and night.
+                </p>
+              </article>
+              <!-- #endregion -->
+              <!-- #region detail-3 -->
+              <article class="detail">
+                <div class="detail__photos">
+                  <a
+                    href="#"
+                    class="detail__link detail__link--square"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/image%2011-DIpxZwmq.png"
+                      alt="Hydraulic disc brakes & Lightweight"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="detail__link detail__link--wide"
+                  >
+                    <img
+                      class="detail__photo"
+                      src="/layout_landing-page/assets/image%2010-BL_K9Wue.png"
+                      alt="Hydraulic disc brakes & Lightweight"
+                    />
+                  </a>
+                </div>
+                <h3 class="detail__title">
+                  Hydraulic disc brakes & Lightweight
+                </h3>
+                <p class="detail__paragraph">
+                  Brakes with total stopping power the second you make contact.
+                  <br />
+                  The removable battery has up to 70km battery autonomy and
+                  weighs only 2.4 kg.
+                  <br />
+                  Lights integrated into the frame give you always-on visibility
+                  day and night.
+                </p>
+              </article>
+              <!-- #endregion -->
+            </div>
+            <div class="section-3">
+              <a
+                class="section-3__a"
+                href="#"
+              >
+                <button class="section-3__button">Explore</button>
+              </a>
+            </div>
+          </section>
+          <!-- #endregion -->
+
+          <!-- #region section-4 -->
+          <section
+            class="contacts"
+            id="contacts"
+          >
+            <h2 class="section-title">Contact us</h2>
+            <div class="contacts__all">
+              <div class="contact">
+                <div class="contact__other">
+                  <form
+                    class="contact__form"
+                    onsubmit="this.reset(); return false;"
+                  >
+                    <input
+                      class="contact__text"
+                      type="text"
+                      name="name"
+                      autocomplete="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <input
+                      class="contact__email"
+                      type="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <textarea
+                      class="contact__message"
+                      name="message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                    <button
+                      class="contact__button"
+                      type="submit"
+                    >
+                      <a
+                        class="contact__send"
+                        href="#"
+                      >
+                        Send
+                      </a>
+                    </button>
+                  </form>
+                </div>
+
+                <div class="div">
+                  <ul class="div__contact">
+                    <li class="div__li">
+                      Phone
+                      <br />
+                      <a
+                        href="tel:+380123456789"
+                        class="phone"
+                      >
+                        +380 12 345 6789
+                      </a>
+                    </li>
+                    <li class="div__li">
+                      Email
+                      <br />
+                      <a
+                        href="mailto:info@example.com"
+                        class="email"
+                      >
+                        info@example.com
+                      </a>
+                    </li>
+                    <li>
+                      Address
+                      <br />
+                      <a
+                        href="https://www.google.com/maps/place/400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@44.9813258,-93.2731311,17z/data=!3m1!4b1!4m6!3m5!1s0x52b3328fdf233887:0x3348e5113ed2472d!8m2!3d44.9813258!4d-93.2731311!16s%2Fg%2F11nyn_tfyt?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        class="address"
+                      >
+                        400 first ave.
+                        <br />
+                        suite 700
+                        <br />
+                        Minneapolis, MN 55401
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- #endregion -->
+        </div>
+      </div>
+    </main>
+    <!-- #endregion -->
+
+    <!-- #region footer -->
+    <footer class="footer">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+    <!-- #endregion -->
+  </body>
+</html>
